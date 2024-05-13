@@ -62,7 +62,7 @@ def generate():
     }
     put_data('S8L_TO_URL', item)
     put_data('URL_TO_S8L', item)
-    return (item, 'Success')
+    return (dict(Item=item), 'Success')
 
 def on_click():
     data, msg = generate()
