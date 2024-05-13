@@ -81,8 +81,7 @@ with st.form(key='form'):
 if st.session_state.get('res_msg', ''):
     st.info(st.session_state.res_msg)
 cols = st.columns(2)
-if st.session_state.get('res_data', {})\
-    and st.session_state.get('res_msg', {}) != 'Success':
+if st.session_state.get('res_data', {}):
     with cols[0]:
         st.subheader('Shorten URL')
         st.write(f'{BASE_URL}/{st.session_state.res_data["shorten"]["S"]}')
