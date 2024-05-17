@@ -4,7 +4,7 @@ import qrcode
 
 st.set_page_config(page_title='S8l Generator', page_icon='🔗')
 
-st.title('S8l Genaerator')
+st.title('S8l Generator')
 
 BASE_URL = 'https://s8l.me'
 
